@@ -1,38 +1,223 @@
-.App {
-  text-align: center;
+.background-image {
+  height: 700px;
+  width: 800px;
+  position: absolute;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-header {
+  color: black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-header {
+  padding-left: 20px;
+  color: black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact-header {
+  padding-left: 20px;
+  color: black;
+}
+.home-container {
+  width: 1440px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.section-list {
+  width: 20rem;
+  padding-left: 3rem;
+  margin-top: 8rem;
+  position: relative;
+}
+.list-section {
+  height: 600px;
+}
+.introduce-heading {
+  font-size: large;
+}
+.paragraph-container {
+  width: 30rem;
+}
+.description {
+  font-weight: 600;
+}
+.button-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.ui-button {
+  height: 2rem;
+  background-color: navy;
+  color: whitesmoke;
+  font-size: large;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.learn-button {
+  height: 2rem;
+  color: black;
+  font-size: large;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-left: 2rem;
+}
+.image-container {
+  width: 20rem;
+  height: 20rem;
+  /* padding-right: 5rem; */
+  position: absolute;
+}
+.element-block {
+  width: 539px;
+  display: flex;
+  position: relative;
+  padding-top: 2rem;
+}
+.lightimage-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.light-heading {
+  width: 400px;
+}
+.section-image {
+  padding-top: 3rem;
+}
+.image-happy {
+  width: 20rem;
+}
+.assets-image {
+  width: 20rem;
+}
+.image-list {
+  display: flex;
+}
+.purchase-button {
+  height: 2rem;
+  background-color: navy;
+  color: whitesmoke;
+  font-size: large;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+.pricing-image {
+  width: 60rem;
+}
+.card-element {
+  width: 10rem;
+}
+.footer {
+  background-color: azure;
+  /* height: 10rem; */
+  width: 60rem;
+}
+.footer-landing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-footer {
+  margin-top: 1rem;
+  height: 2rem;
+  background-color: navy;
   color: white;
+  font-weight: 600;
+}
+.p-footer {
+  font-size: large;
+  font-weight: 800;
+  color: navy;
+}
+.company {
+  color: black;
+}
+.icon-footer {
+  display: flex;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* MEDIA QUERIES */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px) {
+  .home-container {
+    padding-left: 15rem;
   }
-  to {
-    transform: rotate(360deg);
+  .background-image {
+    width: 500px;
+    height: auto;
+  }
+  .section-list {
+    width: 10rem;
+    padding-left: 30px;
+    height: auto;
+    font-size: xx-small;
+  }
+  .introduce-heading {
+    width: 12rem;
+    font-size: x-small;
+    font-weight: 700;
+  }
+  .ui-button {
+    font-size: x-small;
+  }
+  .learn-button {
+    font-size: x-small;
+  }
+  .list-section {
+    height: 300px;
+  }
+  .lightimage-container {
+    padding-top: 5rem;
+    width: 25rem;
+    height: 15rem;
+    padding-left: 8rem;
+    /* position: absolute; */
+  }
+  .light-heading {
+    padding-top: 8rem;
+  }
+  .assets-image {
+    width: 10rem;
+    display: inline;
+  }
+  .image-list {
+    display: inline;
+  }
+  .footer {
+    background-color: azure;
+    width: 768px;
+  }
+  .pricing-image {
+    width: 768px;
+  }
+}
+
+@media (max-width: 312px) {
+  .home-container{
+    padding-left: 2rem;
+  }
+  .footer {
+    background-color: azure;
+    width: 500px;
+  }
+  .pricing-image {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1034px) {
+  .home-container{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  .background-image{
+    padding-left: 6rem;
+  }
+}
+
+@media (min-width:769px) and (max-width:1023px){
+  .footer{
+    width: 50rem;
+  }
+  .pricing-image{
+    width: 50rem;
   }
 }
